@@ -1,1 +1,7 @@
-SET patient:alerts:P001 "Abnormal heartbeat detected at 10:01AM"
+redis-cli
+SET patient:alerts:P001 "High heartbeat detected at 10:00 AM"
+SET patient:alerts:P002 "Normal"
+SET patient:alerts:P003 "High blood pressure detected"
+SET patient:alerts:P004 "Normal"
+SET patient:alerts:P005 "High blood pressure detected"
+GET patient:alerts:P001
