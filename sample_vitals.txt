@@ -3,3 +3,5 @@ curl -i -XPOST http://localhost:8086/write?db=health --data-binary "vitals,patie
 curl -i -XPOST http://localhost:8086/write?db=health --data-binary "vitals,patient_id=P003 heartbeat=85,blood_pressure=130"
 curl -i -XPOST http://localhost:8086/write?db=health --data-binary "vitals,patient_id=P004 heartbeat=70,blood_pressure=110"
 curl -i -XPOST http://localhost:8086/write?db=health --data-binary "vitals,patient_id=P005 heartbeat=90,blood_pressure=140"
+curl -i -XPOST http://localhost:8086/write?db=health --data-binary "vitals,patient_id=P001 heartbeat=80,blood_pressure=120"
+curl -G http://localhost:8086/query?db=health --data-urlencode "q=SELECT * FROM vitals"
