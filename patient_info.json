@@ -1,7 +1,7 @@
-{
-  "patient_id": "P001",
-  "name": "John Doe",
-  "age": 45,
-  "gender": "Male",
-  "medical_history": ["diabetes", "hypertension"]
-}
+[
+  { "patient_id": "P001", "name": "John Doe", "age": 45, "gender": "Male", "medical_history": ["diabetes"] },
+  { "patient_id": "P002", "name": "Jane Smith", "age": 37, "gender": "Female", "medical_history": ["hypertension"] },
+  { "patient_id": "P003", "name": "Ahmed Ali", "age": 50, "gender": "Male", "medical_history": ["asthma", "allergy"] },
+  { "patient_id": "P004", "name": "Maria Garcia", "age": 29, "gender": "Female", "medical_history": [] },
+  { "patient_id": "P005", "name": "Liam Brown", "age": 60, "gender": "Male", "medical_history": ["heart disease"] }
+]
