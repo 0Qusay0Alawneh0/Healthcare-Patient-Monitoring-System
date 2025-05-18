@@ -1,3 +1,13 @@
-CREATE (p:Patient {id: 'P001', name: 'John'})
-CREATE (d:Doctor {id: 'D001', name: 'Dr. Smith'})
-CREATE (p)-[:TREATED_BY]->(d)
+CREATE (p1:Patient {id:'P001', name:'John Doe'}),
+       (p2:Patient {id:'P002', name:'Jane Smith'}),
+       (p3:Patient {id:'P003', name:'Ahmed Ali'}),
+       (p4:Patient {id:'P004', name:'Maria Garcia'}),
+       (p5:Patient {id:'P005', name:'Liam Brown'}),
+       (d1:Doctor {id:'D001', name:'Dr. Smith'}),
+       (d2:Doctor {id:'D002', name:'Dr. Lee'}),
+       (d3:Doctor {id:'D003', name:'Dr. Patel'}),
+       (p1)-[:TREATED_BY]->(d1),
+       (p2)-[:TREATED_BY]->(d2),
+       (p3)-[:TREATED_BY]->(d1),
+       (p4)-[:TREATED_BY]->(d3),
+       (p5)-[:TREATED_BY]->(d2);
